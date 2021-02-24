@@ -24,13 +24,14 @@ module.exports = {
     'no-use-before-define': 0,
     'react/jsx-filename-extension': [1, { extensions: ['.ts', '.tsx'] }],
     'import/extensions': [
-      'error',
+      2,
       'ignorePackages',
       {
         ts: 'never',
         tsx: 'never',
       },
     ],
+    'import/no-extraneous-dependencies': [2, { devDependencies: ['webpack.*.js'] }],
   },
   settings: {
     'import/resolver': {
